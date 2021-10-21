@@ -31,7 +31,7 @@ select {
 	font: inherit;
 }
 
-/* reduce animations */
+/* remove animations who turned it off */
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,
@@ -41,4 +41,36 @@ select {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
+}
+
+/* -------------------- */
+/* Utility classes      */
+/* -------------------- */
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.grid {
+	display: grid;
+	gap: var(--gap, 1rem);
+}
+
+.container {
+	padding-inline: 2em;
+	margin-inline: auto;
+	max-width: 80rem;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
