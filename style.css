@@ -3,9 +3,25 @@
 /* ----------------------- */
 
 :root {
+	/* colors */
 	--clr-dark: 230 35% 7%;
 	--clr-light: 231 77% 90%;
 	--clr-white: 0 0% 100%;
+
+	/* font-sizes */
+	--fs-900: 9.375rem;
+	--fs-800: 6.25rem;
+	--fs-700: 3.5rem;
+	--fs-600: 2rem;
+	--fs-500: 1.75rem;
+	--fs-400: 1.125rem;
+	--fs-300: 1rem;
+	--fs-200: 0.875rem;
+
+	/* font-families */
+	--ff-serif: "Bellefair", serif;
+	--ff-sans-cond: "Barlow Condensed", sans-serif;
+	--ff-sans-normal: "Barlow", sans-serif;
 }
 
 /* ----------------------- */
@@ -22,6 +38,10 @@
 
 /* set up body */
 body {
+	font-family: var(--ff-sans-normal);
+	font-size: var(--fs-400);
+	color: hsl(var(--clr-white));
+	background-color: hsl(var(--clr-dark));
 	min-height: 100vh;
 	line-height: 1.5;
 }
@@ -70,7 +90,7 @@ select {
 .container {
 	padding-inline: 2em;
 	margin-inline: auto;
-	max-width: 60rem;
+	max-width: 80rem;
 }
 
 .sr-only {
@@ -109,4 +129,16 @@ select {
 }
 .text-white {
 	color: hsl(var(--clr-white));
+}
+
+/* typography */
+
+.ff-serif {
+	font-family: var(--ff-serif);
+}
+.ff-sans-cond {
+	font-family: var(--ff-sans-cond);
+}
+.ff-sans-normal {
+	font-family: var(--ff-sans-normal);
 }
